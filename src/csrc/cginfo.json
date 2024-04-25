@@ -1,0 +1,94 @@
+{
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "top": [
+            "top",
+            "Emx8S",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CurCompileUdps": {},
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.029707000000000001,
+            "ru_maxrss_kb": 50028,
+            "ru_stime_sec": 0.018036,
+            "ru_minflt": 12127,
+            "ru_nivcsw": 3,
+            "ru_nvcsw": 142,
+            "ru_majflt": 0
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 0,
+            "ru_majflt": 0
+        },
+        "nMops": 5747,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 0,
+            "ru_majflt": 0
+        },
+        "nQuads": 1572,
+        "totalObjSize": 131811,
+        "mop/quad": 3.6558524173027989,
+        "ru_self_end": {
+            "ru_utime_sec": 0.043504000000000001,
+            "ru_maxrss_kb": 58264,
+            "ru_stime_sec": 0.028649000000000001,
+            "ru_minflt": 14619,
+            "ru_nivcsw": 5,
+            "ru_nvcsw": 204,
+            "ru_majflt": 0
+        },
+        "mopSpeed": 416539.82749873161,
+        "quadSpeed": 113937.81256794956,
+        "CodeGen(%)": 31.714325119529235,
+        "outputSizePerQuad": 83.0,
+        "Frontend(%)": 68.285674880470751
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 58195
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "std",
+        "top"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.29537.json"
+    ],
+    "Misc": {
+        "cwd": "/afs/ece.cmu.edu/usr/zhehuax/private/18224/18224-tapeout/src",
+        "archive_dir": "archive.0",
+        "daidir": "simv.daidir",
+        "csrc": "csrc",
+        "csrc_abs": "/afs/ece.cmu.edu/usr/zhehuax/private/18224/18224-tapeout/src/csrc",
+        "daidir_abs": "/afs/ece.cmu.edu/usr/zhehuax/private/18224/18224-tapeout/src/simv.daidir",
+        "default_output_dir": "csrc"
+    },
+    "CompileStatus": "Successful"
+}

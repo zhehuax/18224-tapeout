@@ -1,0 +1,114 @@
+0 
+24
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/libvirsim.so /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/liberrorinf.so /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/include
+-gen_obj
+-picarchive
+-sverilog
+/afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/bin/vcs1
+fpu_16bit.sv
+input_16.sv
+output_16.sv
+top_16.sv
+75
+sysc_uni_pwd=/afs/ece.cmu.edu/usr/zhehuax/private/18224/18224-tapeout/src
+XDG_SESSION_ID=60
+XDG_RUNTIME_DIR=/run/user/2668131
+XDG_DATA_DIRS=/afs/ece.cmu.edu/usr/zhehuax/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VSCODE_IPC_HOOK_CLI=/run/user/2668131/vscode-ipc-fce18366-6498-4b43-9274-66a174529857.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/2668131/vscode-git-20d4126101.sock
+VSCODE_GIT_ASKPASS_NODE=/afs/andrew.cmu.edu/usr13/zhehuax/.vscode-server/cli/servers/Stable-e170252f762678dec6ca2cc69aba1570769a5d39/server/node
+VSCODE_GIT_ASKPASS_MAIN=/afs/andrew.cmu.edu/usr13/zhehuax/.vscode-server/cli/servers/Stable-e170252f762678dec6ca2cc69aba1570769a5d39/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VOLTUS_TEMPUS_DIR=/afs/ece.cmu.edu/support/cds/share/image/usr/cds/ssv-19.12.000/tools.lnx86
+VMR_MODE_FLAG=32
+VERILATOR_ROOT=/afs/ece.cmu.edu/class/ece725/verilator
+VCS_VERSION=vcs-mx_vK-2015.09
+VCS_TARGET_ARCH=amd64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LIC_EXPIRE_WARNING=0
+VCS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64
+TERM_PROGRAM_VERSION=1.88.1
+TERM_PROGRAM=vscode
+SYN_DIR=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/syn/T-2022.03-SP2
+SYNOPSYS_LICENSE=/afs/ece.cmu.edu/support/synopsys/license.dat
+SYNOPSYS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release
+SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+SSL_CERT_DIR=/etc/pki/tls/certs
+SSH_CONNECTION=172.31.70.8 49761 172.24.56.186 22
+SSH_CLIENT=172.31.70.8 49761 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SIM_DIR=/afs/ece.cmu.edu/support/cds/share/image/usr/cds/xcelium-19.03.010/tools.lnx86
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QUARTUS_64BIT=1
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+QRC_DIR=/afs/ece.cmu.edu/support/cds/share/image/usr/cds/ext-17.10.000/tools.lnx86
+PVS_DIR=/afs/ece/support/cds/share/image/usr/cds/pvs-16.15.000
+OVA_UUM=0
+OA_UNSUPPORTED_PLAT=linux_rhel50_gcc44x
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+MMSIM=/afs/ece.cmu.edu/support/cds/share/image/usr/cds/mmsim-10.11.279
+MGC_HOME=/afs/ece/support/mgc/mgc.release/ARCHIVE/cal_2018.2_33.24/aoi_cal_2018.2_33.24
+MATLABPATH=/afs/ece.cmu.edu/support/cds/share/image/usr/cds/mmsim-10.11.279/tools.lnx86/spectre/matlab/64bit
+LOADEDMODULES=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LEC_DIR=/afs/ece.cmu.edu/support/cds/share/image/usr/cds/confrml-18.10.300/tools.lnx86
+LC_ALL=C
+KRB5CCNAME=KEYRING:persistent:2668131
+INNOV_DIR=/afs/ece.cmu.edu/support/cds/share/image/usr/cds/innovus-19.10.000/tools.lnx86
+HISTCONTROL=ignoredups
+GIT_ASKPASS=/afs/andrew.cmu.edu/usr13/zhehuax/.vscode-server/cli/servers/Stable-e170252f762678dec6ca2cc69aba1570769a5d39/server/extensions/git/dist/askpass.sh
+GENUS_DIR=/afs/ece.cmu.edu/support/cds/share/image/usr/cds/genus-18.14.000/tools.lnx86
+ECE725_CLASS=/afs/ece/class/ece725
+DC_VERSION=syn-vJ-2014.09-SP4
+DC_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/syn-vJ-2014.09-SP4
+CVS_RSH=ssh
+COLORTERM=truecolor
+CDS_Netlisting_Mode=Analog
+CDS_LIC_FILE=5280@cadence-lic.ece.cmu.edu
+CDS_AUTO_64BIT=ALL
+CDSHOME=/afs/ece/support/cds/share/image/usr/cds/ic-6.18.030
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
+ASSURAHOME=/usr/cds/assura-4.15.001-616
+AKLOG=/usr/bin/aklog
+0
+4
+1714018938 fpu_16bit.sv
+1714019053 output_16.sv
+1714018865 input_16.sv
+1714019040 top_16.sv
+4
+0 
+1440563255 /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/libvirsim.so
+1440562843 /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/liberrorinf.so
+1440562824 /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/libsnpsmalloc.so
+1714019057 simv.daidir
