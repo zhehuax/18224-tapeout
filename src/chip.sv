@@ -16,7 +16,7 @@ module my_chip (
     // output_buf out1(.clock, .reset, .ans(y), .done_calc(signal), .out(io_out[11:2]), .done(io_out[0]));
 
     logic [31:0] y;
-    fpu calc(.a({20'd0, io_in}), .b(io_in, 20'd0), .sel(io_in[3:0]), .y);
+    fpu calc(.a({20'd0, io_in}), .b({io_in, 20'd0}), .sel(io_in[3:0]), .y);
     always_ff @(posedge clock, posedge reset) begin
         if (reset)
             io_out <= 'd0;
