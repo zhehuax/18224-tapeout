@@ -7,21 +7,13 @@ module my_chip (
     input logic reset // Important: Reset is ACTIVE-HIGH
 );
 
-    // logic [9:0] a, b, y;
-    // logic [3:0] sel;
-    // logic signal;
-
-    // input_buf in1(.clock, .reset, .in(io_in), .num1(a), .num2(b), .op(sel), .start(signal));
-    // fpu_10 calc(.a, .b_ori(b), .sel, .y);
-    // output_buf out1(.clock, .reset, .ans(y), .done_calc(signal), .out(io_out[11:2]), .done(io_out[0]));
-
     logic [15:0] a, b, y;
     logic [3:0] sel;
     logic signal;
 
-    input_16 in1(.clock, .reset, .in(io_in[9:0]), .num1(a), .num2(b), .op(sel), .start(signal));
-    fpu_16 calc(.a, .b, .sel, .y);
-    output_16 out1(.clock, .reset, .ans(y), .done_calc(signal), .out(io_out[9:0]));
+    input_16 in1(.clock, .reset, .data_in(io_in[9:0]), .num1(a), .num2(b), .op(sel), .start(signal));
+    fpu_16 calc(.a, .b_ori(b), .sel, .y);
+    output_16 out1(.clock, .reset, .ans(y), .done_calc(signal), .data_out(io_out[9:0]));
 
 
 endmodule

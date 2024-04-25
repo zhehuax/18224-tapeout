@@ -2,7 +2,7 @@
 
 module fpu_16 (
     input logic [15:0] a,
-    input logic [15:0] b,
+    input logic [15:0] b_ori,
     input logic [3:0] sel,
     output logic [15:0] y
 );
@@ -20,15 +20,17 @@ module fpu_16 (
     logic [21:0] temp_product, product_nor;
     logic [11:0] product_round;
     logic [9:0] y_product_mantisa;
+    logic [15:0] b;
 
+    assign b = (sel == 4'b0010)? {~b_ori[15], b_ori[14:0]} : {b_ori[15], b_ori[14:0]};
     assign max_exp = 5'b11110;
     assign min_exp = 5'b00001;
     assign a_nan = (a[14:10]==5'b11111 && a[9:0]!=10'd0);
     assign b_nan = (b[14:10]==5'b11111 && b[9:0]!=10'd0);
     assign a_inf = (a[14:10]==5'b11111 && a[9:0]==10'd0);
     assign b_inf = (b[14:10]==5'b11111 && b[9:0]==10'd0);
-    assign a_0 = (a[14:10]==5'd0 && a[9:0]==10'd0);
-    assign b_0 = (b[14:10]==5'd0 && b[9:0]==10'd0);
+    assign a_0 = (a[14:10]==5'd0);
+    assign b_0 = (b[14:10]==5'd0);
 
     always_comb begin
 
@@ -66,9 +68,11 @@ module fpu_16 (
         else if (b_inf && sel[1:0]>'d0) y = b;
         else if ((a_inf || b_inf) && sel[3:2]>'d0 && a[15]==b[15]) y = 16'b0111110000000000;
         else if ((a_inf || b_inf) && sel[3:2]>'d0 && a[15]!=b[15]) y = 16'b1111110000000000;
-        else if (a_0 && sel[1:0]>'d0) y = b;
+        else if (a_0 && b_0 && sel[1:0]>'d0) y = 16'd0;
+        else if (a_0 && sel[1:0]>='b01) y = b;
         else if (a_0 && sel[3:2]>'d0) y = 16'd0;
-        else if (b_0 && sel[1:0]>'d0) y = a;
+        else if (b_0 && sel[1:0]=='b01) y = a;
+        else if (b_0 && sel[1:0]=='b10) y = {~a[15], a[14:0]};
         else if (b_0 && sel[3:2]>'d0) y = 16'd0;
 
         else if (a[15]!=b[15]&&a[14:0]==b[14:0]&& sel[1:0]>'d0) y = 'd0;
@@ -433,17 +437,17 @@ module fpu_16 (
                 end
             end
             else begin
-                product_round = product_nor[14:10];
+                product_round = product_nor[21:10];
                 y_product_mantisa = product_round[9:0];
                 y_exp_c_round = y_exp_c_nor;
                 y_exp_neg_round = y_exp_neg_nor;
             end
 
             // calculate exp and putin mantisa
-            if (y_exp_neg_round && y_exp_c_round > 8'd14) begin
+            if (y_exp_neg_round && y_exp_c_round > 5'd14) begin
                 y[14:0] = 15'd0;
             end
-            else if (y_exp_neg_round && y_exp_c_round <= 8'd14) begin
+            else if (y_exp_neg_round && y_exp_c_round <= 5'd14) begin
                 y[14:10] = 5'd15 - y_exp_c_round;
                 y[9:0] = y_product_mantisa;
             end
