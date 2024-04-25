@@ -12,7 +12,7 @@ module my_chip (
     logic signal;
 
     input_buf in1(.clock, .reset, .in(io_in), .num1(a), .num2(b), .op(sel), .start(signal));
-    fpu calc(.a, .b_ori(b), .sel, .y);
+    fpu_10 calc(.a, .b_ori(b), .sel, .y);
     output_buf out1(.clock, .reset, .ans(y), .done_calc(signal), .out(io_out[11:2]), .done(io_out[0]));
 
 endmodule

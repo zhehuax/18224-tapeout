@@ -1,6 +1,6 @@
 `default_nettype none
 
-module fpu (
+module fpu_10 (
     input logic [9:0] a,
     input logic [9:0] b_ori,
     input logic [3:0] sel,
@@ -381,4 +381,4 @@ module fpu (
         end
     end
 
-endmodule : fpu
+endmodule : fpu_10
