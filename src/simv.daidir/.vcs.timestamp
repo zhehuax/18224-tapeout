@@ -20,10 +20,10 @@
 -picarchive
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/bin/vcs1
+chip.sv
 fpu_16bit.sv
 input_16.sv
 output_16.sv
-top_16.sv
 75
 sysc_uni_pwd=/afs/ece.cmu.edu/usr/zhehuax/private/18224/18224-tapeout/src
 XDG_SESSION_ID=60
@@ -103,12 +103,12 @@ AKLOG=/usr/bin/aklog
 0
 4
 1714018938 fpu_16bit.sv
-1714019053 output_16.sv
-1714018865 input_16.sv
-1714019040 top_16.sv
+1714019805 output_16.sv
+1714019799 input_16.sv
+1714019752 chip.sv
 4
 0 
 1440563255 /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/libvirsim.so
 1440562843 /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/liberrorinf.so
 1440562824 /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/libsnpsmalloc.so
-1714019057 simv.daidir
+1714019914 simv.daidir

@@ -1,0 +1,40 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {},
+        "my_chip": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "P0xrA_d": {
+            "mod": "my_chip",
+            "out": "P0xrA_d.o",
+            "bytes": 37386,
+            "mode": 4,
+            "archive": "archive.1/_870_archive_1.a",
+            "checksum": 4294967295
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7948,
+            "mode": 4,
+            "checksum": 4294967295
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "objects": [
+                [
+                    "P0xrA_d.o",
+                    37386
+                ]
+            ],
+            "archive": "archive.1/_870_archive_1.a",
+            "size": 37386
+        }
+    ]
+}
