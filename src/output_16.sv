@@ -1,4 +1,4 @@
-module output_buf(
+module output_16(
     input logic clock, reset,
     input logic [15:0] ans,
     input logic done_calc,
@@ -32,4 +32,4 @@ module output_buf(
             out <= 'd0;
     end
 
-endmodule
+endmodule: output_16

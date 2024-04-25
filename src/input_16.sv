@@ -1,4 +1,4 @@
-module input_buf(
+module input_16(
     input logic clock, reset,
     input logic [9:0] in,
     output logic [15:0] num1, num2,
@@ -52,4 +52,4 @@ module input_buf(
             start <= 0;
     end
 
-endmodule
+endmodule: input_16
