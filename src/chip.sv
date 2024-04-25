@@ -7,9 +7,9 @@ module my_chip (
     input logic reset // Important: Reset is ACTIVE-HIGH
 );
 
-    logic [9:0] a, b, y;
-    logic [3:0] sel;
-    logic signal;
+    // logic [9:0] a, b, y;
+    // logic [3:0] sel;
+    // logic signal;
 
     // input_buf in1(.clock, .reset, .in(io_in), .num1(a), .num2(b), .op(sel), .start(signal));
     // fpu_10 calc(.a, .b_ori(b), .sel, .y);
