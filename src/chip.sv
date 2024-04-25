@@ -19,9 +19,9 @@ module my_chip (
     logic [3:0] sel;
     logic signal;
 
-    input_buf in1(.clock, .reset, .in(inp), .num1(a), .num2(b), .op(sel), .start(signal));
+    input_buf in1(.clock, .reset, .in(io_in[9:0]), .num1(a), .num2(b), .op(sel), .start(signal));
     fpu_16 calc(.a, .b, .sel, .y);
-    output_buf out1(.clock, .reset, .ans(y), .done_calc(signal), .out);
+    output_buf out1(.clock, .reset, .ans(y), .done_calc(signal), .out(io_out[9:0]));
 
 
 endmodule
