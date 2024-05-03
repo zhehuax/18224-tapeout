@@ -1,5 +1,5 @@
 0 
-24
+21
 -Mamsrun=
 -Masflags=
 -Mcc=gcc
@@ -20,16 +20,13 @@
 -picarchive
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/bin/vcs1
-chip.sv
 fpu_16bit.sv
-input_16.sv
-output_16.sv
 75
 sysc_uni_pwd=/afs/ece.cmu.edu/usr/zhehuax/private/18224/18224-tapeout/src
-XDG_SESSION_ID=60
+XDG_SESSION_ID=1592
 XDG_RUNTIME_DIR=/run/user/2668131
 XDG_DATA_DIRS=/afs/ece.cmu.edu/usr/zhehuax/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-VSCODE_IPC_HOOK_CLI=/run/user/2668131/vscode-ipc-fce18366-6498-4b43-9274-66a174529857.sock
+VSCODE_IPC_HOOK_CLI=/run/user/2668131/vscode-ipc-1c674e69-93de-44d5-96d6-4ab32f04d411.sock
 VSCODE_GIT_IPC_HANDLE=/run/user/2668131/vscode-git-20d4126101.sock
 VSCODE_GIT_ASKPASS_NODE=/afs/andrew.cmu.edu/usr13/zhehuax/.vscode-server/cli/servers/Stable-e170252f762678dec6ca2cc69aba1570769a5d39/server/node
 VSCODE_GIT_ASKPASS_MAIN=/afs/andrew.cmu.edu/usr13/zhehuax/.vscode-server/cli/servers/Stable-e170252f762678dec6ca2cc69aba1570769a5d39/server/extensions/git/dist/askpass-main.js
@@ -56,8 +53,8 @@ SYNOPSYS_LICENSE=/afs/ece.cmu.edu/support/synopsys/license.dat
 SYNOPSYS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release
 SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
 SSL_CERT_DIR=/etc/pki/tls/certs
-SSH_CONNECTION=172.31.70.8 49761 172.24.56.186 22
-SSH_CLIENT=172.31.70.8 49761 22
+SSH_CONNECTION=172.26.40.138 63754 172.24.56.186 22
+SSH_CLIENT=172.26.40.138 63754 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SIM_DIR=/afs/ece.cmu.edu/support/cds/share/image/usr/cds/xcelium-19.03.010/tools.lnx86
 SELINUX_USE_CURRENT_RANGE=
@@ -77,7 +74,7 @@ OA_UNSUPPORTED_PLAT=linux_rhel50_gcc44x
 MODULESHOME=/usr/share/Modules
 MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
 MMSIM=/afs/ece.cmu.edu/support/cds/share/image/usr/cds/mmsim-10.11.279
-MGC_HOME=/afs/ece/support/mgc/mgc.release/ARCHIVE/cal_2018.2_33.24/aoi_cal_2018.2_33.24
+MGC_HOME=/afs/ece.cmu.edu/support/mgc/mgc.release/cal_2022.2_aoi/aoi_cal_2022.2_38.20
 MATLABPATH=/afs/ece.cmu.edu/support/cds/share/image/usr/cds/mmsim-10.11.279/tools.lnx86/spectre/matlab/64bit
 LOADEDMODULES=
 LESSOPEN=||/usr/bin/lesspipe.sh %s
@@ -101,14 +98,11 @@ BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 ASSURAHOME=/usr/cds/assura-4.15.001-616
 AKLOG=/usr/bin/aklog
 0
-4
-1714018938 fpu_16bit.sv
-1714019805 output_16.sv
-1714019799 input_16.sv
-1714019752 chip.sv
+1
+1714767257 fpu_16bit.sv
 4
 0 
 1440563255 /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/libvirsim.so
 1440562843 /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/liberrorinf.so
 1440562824 /afs/ece.cmu.edu/support/synopsys/synopsys.release/vcs-mx_vK-2015.09/linux64/lib/libsnpsmalloc.so
-1714019914 simv.daidir
+1714767420 simv.daidir

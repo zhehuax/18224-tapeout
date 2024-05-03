@@ -1,0 +1,40 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {},
+        "fpu_16": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "t5TD4_d": {
+            "mod": "fpu_16",
+            "out": "t5TD4_d.o",
+            "archive": "archive.2/_32640_archive_1.a",
+            "bytes": 34226,
+            "checksum": 4294967295,
+            "mode": 4
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7942,
+            "checksum": 4294967295,
+            "mode": 4
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.2/_32640_archive_1.a",
+            "objects": [
+                [
+                    "t5TD4_d.o",
+                    34226
+                ]
+            ],
+            "size": 34226
+        }
+    ]
+}
