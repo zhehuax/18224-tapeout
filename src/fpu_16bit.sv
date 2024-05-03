@@ -402,7 +402,7 @@ module fpu_16 (
             end
 
             // calculate mantisa
-            temp_product = sel[3]? {1'b1,a[9:0]}/{1'b1,b[9:0]} : {1'b1,a[9:0]}*{1'b1,b[9:0]};
+            temp_product = {1'b1,a[9:0]}*{1'b1,b[9:0]};
             if (temp_product[21]==1'b1) begin
                 product_nor = temp_product >> 1;
                 if (y_exp_neg) y_exp_c_nor = y_exp_c-5'd1;
