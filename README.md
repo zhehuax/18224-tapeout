@@ -67,7 +67,7 @@ Output ports:
 
 ## Hardware Peripherals
 
-FPGA will be used for testing after tape-out.
+FPGA and Arduino will be used for testing after tape-out.
 
 ## Design Testing / Bringup
 
@@ -88,11 +88,11 @@ FPGA will be used for testing after tape-out.
 
 ### Testing after tape-out
 
-* The current plan for testing is to connect the chip with an FPGA.
+* The current plan for testing is to connect the chip with an FPGA and/or Arduino.
 
-* The FPGA will provide a clock, feeding in inputs and reading out outputs.
+* The FPGA/Arduino will provide a clock, feeding in inputs and reading out outputs.
 
-* The output bits will be printed into text and parsed for correctness checking.
+* The output bits will be printed into text and parsed for correctness checking (with some Python script, just like verification).
 
 ## Media
 
